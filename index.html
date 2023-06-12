@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <title>Movie List</title>
+  </head>
+  <body>
+    <section class="name">
+      <h1 onclick="location.href='index.html'">Movie</h1>
+      <div class="search">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="검색할 영화이름을 입력하세요."
+          onkeyup="enterKey()"
+          required
+          autofocus
+        />
+        <ion-icon
+          name="search-sharp"
+          id="searchBtn"
+          onclick="search()"
+        ></ion-icon>
+      </div>
+    </section>
+    <section id="cards">
+      <div class="col">
+        <img src="poster.png" alt="..." />
+        <h3></h3>
+        <p></p>
+        <p></p>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

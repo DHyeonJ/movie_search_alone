@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+}
+
+body {
+  color: white;
+  height: 100vh;
+  font-weight: bold;
+  width: 100vw;
+  /* 내용물을 정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("poster.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.name {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  top: 0;
+  height: 10%;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  width: 300px;
+  height: 40px;
+}
+
+.search > input {
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  padding-left: 20px;
+}
+
+.search > input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.search > ion-icon {
+  align-items: center;
+  justify-content: center;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 70%;
+}
+
+.col {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  height: 90%;
+  border: 1px solid white;
+  justify-self: center;
+  border-radius: 40px;
+}
+
+.col > img {
+  width: 100%;
+  height: 50%;
+  border-radius: 50px;
+}
